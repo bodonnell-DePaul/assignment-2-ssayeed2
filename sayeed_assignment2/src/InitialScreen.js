@@ -10,8 +10,8 @@ function InitialScreen() {
             <h1 className="text-center display-4">Assignment 2: Sara's ToDo List</h1>
             <Row>
                 <Col sm={4}><FormComp /></Col>
-                <Col sm={4}><ListGroupComp /></Col>
                 <Col sm={4}><TabComp /></Col>
+                <Col sm={4}><ListGroupComp /></Col>
             </Row>
         </Container>
     );

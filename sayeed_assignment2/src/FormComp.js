@@ -1,8 +1,9 @@
 import Form from 'react-bootstrap/Form';
 import ButtonComp from './ButtonComp';
+import 
 function FormComp() {
   return (
-    <Form>
+    <Form className="FormComp">
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>ToDo Item</Form.Label>
         <Form.Control type="email" placeholder="Add todo item" />

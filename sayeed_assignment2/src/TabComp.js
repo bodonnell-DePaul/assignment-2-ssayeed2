@@ -7,13 +7,19 @@ function TabComp() {
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
       <Row>
-        <Col sm={3}>
+        <Col sm={8}>
           <Nav variant="pills" className="flex-column">
             <Nav.Item>
-              <Nav.Link eventKey="first">Tab 1</Nav.Link>
+              <Nav.Link eventKey="first">Todo 1</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="second">Tab 2</Nav.Link>
+              <Nav.Link eventKey="second">Todo 2</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="third">Todo 3</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="fourth">Todo 4</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>
@@ -21,6 +27,8 @@ function TabComp() {
           <Tab.Content>
             <Tab.Pane eventKey="first">First tab content</Tab.Pane>
             <Tab.Pane eventKey="second">Second tab content</Tab.Pane>
+            <Tab.Pane eventKey="third">Third tab contect</Tab.Pane>
+            <Tab.Pane eventKey="fourth">Fourth tab content</Tab.Pane>
           </Tab.Content>
         </Col>
       </Row>
