@@ -1,31 +1,35 @@
+import { useState } from 'react';
 import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
-import { todos } from './todoItems';
+import { todos as initialTodos } from './todoItems'; // Load the initial todo items
 
-function TabComp() {
+function TabComp({ activeKey }) {
+  const [todoItems, setTodoItems] = useState(initialTodos); // Create state for todo items
+
+  // Function to handle due date change
+  const handleDueDateChange = (e, index) => {
+    const updatedTodos = [...todoItems]; // Copy current todo items
+    updatedTodos[index].dueDate = e.target.value; // Update the due date for the specific todo
+    setTodoItems(updatedTodos); // Update state with the new due date
+  };
+
   return (
-    <Tab.Container id="left-tabs-example" defaultActiveKey={todos[0].title}>
+    <Tab.Container id="todo-list-tabs" activeKey={activeKey}>
       <Row>
-        <Col sm={3}>
-          {/* Generate Nav.Item and Nav.Link dynamically from todos */}
-          <Nav variant="pills" className="flex-column">
-            {todos.map((todo, index) => (
-              <Nav.Item key={index}>
-                <Nav.Link eventKey={todo.title}>{todo.title}</Nav.Link>
-              </Nav.Item>
-            ))}
-          </Nav>
-        </Col>
-        <Col sm={9}>
-          {/* Generate Tab.Pane dynamically from todos */}
+        <Col sm={12}>
           <Tab.Content>
-            {todos.map((todo, index) => (
-              <Tab.Pane eventKey={todo.title} key={index}>
-                <h5>{todo.title}</h5>
+            {todoItems.map((todo, index) => (
+              <Tab.Pane eventKey={index.toString()} key={index} role="tabpanel">
                 <p>{todo.description}</p>
-                <p><strong>Due Date:</strong> {todo.dueDate}</p>
+
+                {/* Editable Due Date */}
+                <label><strong>Due Date: </strong></label>
+                <input
+                  type="date"
+                  value={todo.dueDate}
+                  onChange={(e) => handleDueDateChange(e, index)} // Update due date when changed
+                />
               </Tab.Pane>
             ))}
           </Tab.Content>
