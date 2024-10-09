@@ -1,5 +1,5 @@
 import Form from 'react-bootstrap/Form';
-import ButtonComp from './ButtonComp';
+
 import Button from 'react-bootstrap/Button';
 import './FormComp.css';
 function FormComp() {
