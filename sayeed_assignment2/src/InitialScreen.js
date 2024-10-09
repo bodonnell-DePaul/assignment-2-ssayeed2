@@ -8,10 +8,10 @@ function InitialScreen() {
     return (
         <Container>
             <h1 className="text-center display-4">Assignment 2: Sara's ToDo List</h1>
-            <Row>
-                <Col sm={4}><FormComp /></Col>
-                <Col sm={4}><TabComp /></Col>
-                <Col sm={4}><ListGroupComp /></Col>
+            <Row className="justify-content-center">
+                <Col sm={3}><FormComp /></Col>
+                <Col sm={9}><TabComp /></Col>
+                {/* <Col sm={4}><ListGroupComp /></Col> */}
             </Row>
         </Container>
     );

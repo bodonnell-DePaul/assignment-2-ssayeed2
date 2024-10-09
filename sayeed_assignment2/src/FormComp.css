@@ -1,13 +1,20 @@
 .FormComp {
-    background-color: chartreuse; /* Bright green background */
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color: rgb(0, 208, 255); 
+    padding: 20px;
+    width: 100%; /* Keep this full width */
+    
 }
 
 .mb-3 {
-    width: 90%;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
+
+
+.SubmitButton {
+    width: 100%; /* Make the button span the full width of the container */
+    display: block;
+    margin-top: 10px;
+}
+

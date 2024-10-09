@@ -1,6 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import ButtonComp from './ButtonComp';
-import 
+import Button from 'react-bootstrap/Button';
+import './FormComp.css';
 function FormComp() {
   return (
     <Form className="FormComp">
@@ -12,7 +13,9 @@ function FormComp() {
         <Form.Label>Due Date</Form.Label>
         <Form.Control type="date" placeholder="mm/dd/yyyy" />
       </Form.Group>
-      <ButtonComp/>
+      <Button variant="primary" type="submit" className="SubmitButton">
+        Add ToDo
+        </Button>
     </Form>
   );
 }
