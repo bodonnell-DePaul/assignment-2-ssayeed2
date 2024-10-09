@@ -11,7 +11,7 @@ function InitialScreen() {
 
   return (
     <Container>
-      <h1 className="text-center">Assignment 2: Sara's ToDo List</h1>
+      <h1 className="text-center">Assignment 2: Sara's ToDo List</h1><br />
       <Row>
         {/* Form for adding new ToDo */}
         <Col sm={3}>
