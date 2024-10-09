@@ -3,16 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-//import ListGroupComp from './ListGroupComp';
-//import TabComp from './TabComp';
-//import Viewport from './Viewport';
+import InitialScreen from './InitialScreen';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <ListGroupComp/> */}
     {/* <TabComp/> */}
-    <Viewport/>
+    <InitialScreen/>
   </React.StrictMode>
 );
 

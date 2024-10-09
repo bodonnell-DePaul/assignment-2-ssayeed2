@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import ListGroupComp from './ListGroupComp';
 import TabComp from './TabComp';
 import FormComp from './FormComp';
-function Viewport() {
+function InitialScreen() {
     return (
         <Container>
             <h1>Assignment 2: Sara Sayeed</h1>
@@ -18,4 +18,4 @@ function Viewport() {
 }
 
 
-export default Viewport; 
+export default InitialScreen;
