@@ -4,11 +4,9 @@ function ButtonComp() {
   return (
     <div className="d-grid gap-2">
       <Button variant="primary" size="lg">
-        Block level button
+        Add ToDo
       </Button>
-      <Button variant="secondary" size="lg">
-        Block level button
-      </Button>
+      
     </div>
   );
 }
