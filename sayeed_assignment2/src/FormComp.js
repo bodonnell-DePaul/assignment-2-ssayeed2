@@ -7,7 +7,7 @@ function FormComp() {
     <Form className="FormComp">
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>ToDo Item</Form.Label>
-        <Form.Control type="email" placeholder="Add todo item" />
+        <Form.Control type="text" placeholder="Add todo item" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <Form.Label>Due Date</Form.Label>
